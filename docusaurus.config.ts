@@ -28,12 +28,12 @@ const config: Config = {
         docs: {
           sidebarPath: './sidebars.ts',
           editUrl:
-            'https://github.com/kitamersion/kita-website',
+            'https://github.com/kitamersion/kita-website/tree/main',
         },
         blog: {
           showReadingTime: true,
           editUrl:
-            'https://github.com/kitamersion/kita-website',
+            'https://github.com/kitamersion/kita-website/tree/main',
         },
         theme: {
           customCss: './src/css/custom.css',
