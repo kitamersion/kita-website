@@ -33,7 +33,7 @@ export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
+      title={siteConfig.title}
       description="Simple immersion tracking tool! Main objective is to provide a user-friendly platform for effortlessly tracking your immersion activities along the way."
     >
       <HomepageHeader />
