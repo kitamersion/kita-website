@@ -1,5 +1,8 @@
 ---
 sidebar_position: 1
+title: Welcome
+tags:
+    - introduction
 ---
 
 # Welcome! 👋

@@ -1,8 +1,7 @@
 ---
 sidebar_position: 2
+title: Get Started
 ---
-
-# Get Started
 
 Follow the steps below to download and install it on your preferred browser.
 
