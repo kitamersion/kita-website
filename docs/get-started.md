@@ -1,8 +1,11 @@
 ---
 sidebar_position: 2
+title: Get Started
+tags:
+    - introduction
+    - install
+    - github
 ---
-
-# Get Started
 
 Follow the steps below to download and install it on your preferred browser.
 

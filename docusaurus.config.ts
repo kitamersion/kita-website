@@ -64,25 +64,6 @@ const config: Config = {
         },
       ],
     },
-    footer: {
-      style: 'dark',
-      links: [
-        {
-          title: 'Kitamersion',
-          items: [
-            {
-              label: 'Documentation',
-              to: '/docs/welcome',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/kitamersion',
-            },
-          ],
-        },
-      ],
-      copyright: `Copyright © ${new Date().getFullYear()} Kitamersion. Built with Docusaurus.`,
-    },
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
