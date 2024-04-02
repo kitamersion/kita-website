@@ -14,7 +14,7 @@ Follow the steps below to download and install it on your preferred browser.
 Browser extension is currently available for:
 
 - [Mozilla Firefox](https://addons.mozilla.org/en-US/firefox/addon/kita-browser/)
-- [Google Chrome](/docs/get-started) (Coming soon...)
+- [Google Chrome](https://chromewebstore.google.com/detail/kita-browser/bfcnppooaljdcjdkcgdnlbggjoimlcgn)
 
 
 ## View Project on GitHub
