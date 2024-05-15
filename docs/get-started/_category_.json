@@ -1,0 +1,9 @@
+{
+    "label": "Get Started",
+    "position": 2,
+    "link": {
+        "type": "generated-index",
+        "title": "🚀 Get Started",
+        "description": "Get started by installing web extension on your browser"
+    }
+}

@@ -1,6 +1,6 @@
 ---
-sidebar_position: 2
-title: Get Started
+sidebar_position: 1
+title: Install
 tags:
     - introduction
     - install
@@ -9,7 +9,7 @@ tags:
 
 Follow the steps below to download and install it on your preferred browser.
 
-## Choose Your Browser
+## 🔧 Choose Your Browser
 
 Browser extension is currently available for:
 
