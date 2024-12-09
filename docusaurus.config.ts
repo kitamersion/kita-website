@@ -1,66 +1,71 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
-import type * as Preset from '@docusaurus/preset-classic';
+import { themes as prismThemes } from "prism-react-renderer";
+import type { Config } from "@docusaurus/types";
+import type * as Preset from "@docusaurus/preset-classic";
+import tailwindPlugin from "./plugins/tailwind-config.cjs";
 
 const config: Config = {
-  title: 'Kitamersion',
-  tagline: 'Simple immersion tool - Open source',
-  favicon: 'img/favicon.ico',
+  title: "Kitamersion",
+  tagline: "Simple immersion tool",
+  favicon: "img/favicon.ico",
 
-  url: 'https://www.kitamersion.com',
-  baseUrl: '/',
+  url: "https://www.kitamersion.com",
+  baseUrl: "/",
 
-  organizationName: 'kitamersion',
-  projectName: 'kita-website',
+  organizationName: "kitamersion",
+  projectName: "kita-website",
 
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
 
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: "en",
+    locales: ["en"],
   },
 
+  plugins: [tailwindPlugin],
   presets: [
     [
-      'classic',
+      "classic",
       {
         docs: {
-          sidebarPath: './sidebars.ts',
-          editUrl:
-            'https://github.com/kitamersion/kita-website/tree/main',
+          sidebarPath: "./sidebars.ts",
+          editUrl: "https://github.com/kitamersion/kita-website/tree/main",
         },
         blog: {
           showReadingTime: true,
-          editUrl:
-            'https://github.com/kitamersion/kita-website/tree/main',
+          editUrl: "https://github.com/kitamersion/kita-website/tree/main",
         },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: "./src/css/custom.css",
         },
       } satisfies Preset.Options,
     ],
   ],
 
   themeConfig: {
-    image: 'img/docusaurus-social-card.jpg',
+    colorMode: {
+      defaultMode: "dark",
+      disableSwitch: false,
+      respectPrefersColorScheme: true,
+    },
+    image: "img/docusaurus-social-card.jpg",
     navbar: {
-      title: 'Kitamersion',
+      title: "Kitamersion",
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/icon192.png',
+        alt: "My Site Logo",
+        src: "img/icon192.png",
       },
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'documentationSidebar',
-          position: 'left',
-          label: 'Documentation',
+          type: "docSidebar",
+          sidebarId: "documentationSidebar",
+          position: "left",
+          label: "Documentation",
         },
         {
-          href: 'https://github.com/kitamersion',
-          label: 'GitHub',
-          position: 'right',
+          href: "https://github.com/kitamersion",
+          label: "GitHub",
+          position: "right",
         },
       ],
     },
