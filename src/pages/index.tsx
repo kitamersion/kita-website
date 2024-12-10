@@ -13,7 +13,7 @@ function Homepage() {
     <div className="container flex flex-col justify-center items-center h-screen uppercase gap-2">
       <div className="flex flex-col items-center">
         <HorizontalRule />
-        <h1 className="text-white m-0">{siteConfig.title}</h1>
+        <h1 className="m-0">{siteConfig.title}</h1>
         <HorizontalRule />
       </div>
       <p className="m-0">{siteConfig.tagline}</p>
