@@ -1,45 +1,41 @@
-import clsx from "clsx";
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-import Layout from "@theme/Layout";
-import HomepageFeatures from "@site/src/components/HomepageFeatures";
-import Heading from "@theme/Heading";
+import { PageMetadata } from "@docusaurus/theme-common";
+import LayoutProvider from "@theme/Layout/Provider";
 
-import styles from "./index.module.css";
+const HorizontalRule = () => {
+  return <hr className="flex-grow border-4 w-full" />;
+};
 
-function HomepageHeader() {
+function Homepage() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <header className={clsx("hero hero--primary", styles.heroBanner)}>
-      <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
-        </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/welcome"
-          >
-            Get Started
-          </Link>
-        </div>
+    <div className="container flex flex-col justify-center items-center h-screen uppercase gap-2">
+      <div className="flex flex-col items-center">
+        <HorizontalRule />
+        <h1 className="text-white m-0">{siteConfig.title}</h1>
+        <HorizontalRule />
       </div>
-    </header>
+      <p className="m-0">{siteConfig.tagline}</p>
+      <Link className="bg-red-600 p-2 rounded-lg text-white mt-4" to="/docs/welcome">
+        Get Started
+      </Link>
+    </div>
   );
 }
 
 export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <Layout
-      title={siteConfig.title}
-      description="Simple immersion tracking tool! Main objective is to provide a user-friendly platform for effortlessly tracking your immersion activities along the way."
-    >
-      <HomepageHeader />
+    <LayoutProvider>
+      <PageMetadata
+        title={siteConfig.title}
+        description="Simple immersion tracking tool! Trying to provide a user-friendly tool to effortlessly track your immersion activities online."
+      />
+
       <main>
-        <HomepageFeatures />
+        <Homepage />
       </main>
-    </Layout>
+    </LayoutProvider>
   );
 }
